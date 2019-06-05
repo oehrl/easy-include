@@ -3,10 +3,14 @@
 	"displayName": "Easy Include",
 	"description": "Add an include statement to the top of the file from anywhere",
 	"version": "0.0.1",
+	"publisher": "simonoehrl",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oehrl/easy-include"
+	},
 	"engines": {
 		"vscode": "^1.34.0"
 	},
-	"publisher": "simonoehrl",
 	"categories": [
 		"Other"
 	],
@@ -15,10 +19,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "easyinclude.addInclude",
-			"title": "Add Include"
-		}]
+		"commands": [
+			{
+				"command": "easyinclude.addInclude",
+				"title": "Add Include"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
