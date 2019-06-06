@@ -39,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
 				const editor = vscode.window.activeTextEditor;
 				if (editor) {
 					const text = editor.document.getText();
-					const regex = /[ \t]*#\s*include\s+[<\"][^>\"]*[>\"]/g;
+					const regex = /[ \t]*#\s*(include\s+[<\"][^>\"]*[>\"]|\s*pragma\s*once\s*)/g;
 					var match;
 
 					var insertOffset = 0;
