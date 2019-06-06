@@ -35,6 +35,10 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ## Release Notes
 
+### 0.0.2
+
+* The include will now be inserted after `#pragma once` (if present) if there are no other include statements present
+
 ### 0.0.1
 
-First release
+* First release
